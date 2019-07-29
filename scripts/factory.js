@@ -1,8 +1,10 @@
 console.log("hello from factory.js");
 
+let a = 1;
+
 const createParkHTML = parkObject => {
   return `
-  <div class="results__parks">
+  <div class="results__parks${a++}">
     <h3>${parkObject.park_name}</h3>
     <h3>${parkObject.mapped_location.human_address
       .replace('{"address": "', "")
