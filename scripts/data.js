@@ -9,22 +9,26 @@
 //     .then(results => {
 //         console.log(results)
 //     })
-    
 // }
-
 // getZomatoAPIData()
-restaurantNames = ""
+
+
+let restaurantNames = ""
 const getOpenTableData = () => {
     return fetch('http://opentable.herokuapp.com/api/restaurants?city=Nashville')
         .then(response => response.json())
-        .then(results => {
-            let restaurantNames = results.restaurants
-                console.log(restaurantNames)
+        .then(restaurantNames => {
+            console.log(restaurantNames)
+            return restaurantNames
             
-                
-            });
+        });
 }
 
+for (i = 0; i < restaurantNames.length; i++) {
+    let name = restaurantNames.name
+    console.log(name)
+
+}
 
 
 
@@ -36,9 +40,5 @@ const getOpenTableData = () => {
 
 
 
-// restaurantNames.forEach(result => {
-//     htmlRepresentation = createRestaurantDisplayComponent = (result.name, result.address);
-//     placeToDisplayRestaurant.innerHTML += htmlRepresentation;
-    
-// });
+
 
