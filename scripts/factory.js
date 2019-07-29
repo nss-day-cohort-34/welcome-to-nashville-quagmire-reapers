@@ -21,6 +21,7 @@ const createParkHTML = parkObject => {
       .replace('", "zip": "37209"}', "")
       .replace('", "zip": "37076"}', "")
       .replace('", "zip": "37115"}', "")}
+    <button id="saveParks">Save</button>
   </div>
   `;
 };
