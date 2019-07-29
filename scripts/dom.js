@@ -1,11 +1,10 @@
-const placeToDisplayRestaurant = document.querySelector("#search-section")
+const placeToLocateRestaurant = document.querySelector("#results-section")
 
 
-const htmlRepresentation = () =>  {
-    placeToDisplayRestaurant.innerHTML += createRestaurantDisplayComponent();
-
-}
-
-
-// document.getElementById("restaurantSearchButton").addEventListener("click", function(){console.log("button push")})
+ const htmlRepresentation = (htmlString) =>  {
+     placeToLocateRestaurant.innerHTML += htmlString;
+     console.log(placeToLocateRestaurant)
+     console.log(htmlRepresentation)
+     
+ }
 
