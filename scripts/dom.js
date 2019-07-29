@@ -19,5 +19,7 @@ const renderItineraryHeader = () => {
   containItineraryHeader.innerHTML += createItineraryHeader();
 };
 
-const containParkSearchButton = document.querySelector("#park__search");
-// const parkSearchButton = containParkSearchButton.addEventListener("click", )
+const containParkResults = document.querySelector("#results-section");
+const renderParkResults = () => {
+  containParkResults.innerHTML += createParkResults();
+};

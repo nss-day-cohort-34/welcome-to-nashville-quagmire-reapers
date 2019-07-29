@@ -1,9 +1,12 @@
 console.log("hello from data.js");
 
-const getParkData = () => {
-  return fetch("https://data.nashville.gov/resource/74d7-b74t.json").then(
-    response => response.json()
-  );
+const getParkData = userSelection => {
+  return fetch(
+    `https://data.nashville.gov/resource/74d7-b74t.json?${userSelection}`
+  )
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    });
 };
 
-console.log(getParkData());
