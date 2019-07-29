@@ -6,6 +6,14 @@ const createHeader = () => {
     `;
 };
 
+const createResultsHeader = () => {
+  return `<h2 id="results__header">Results</h2>`;
+};
+
+const createItineraryHeader = () => {
+  return `<h2 id="itinerary__header">My Itinerary</h2>`;
+};
+
 const createParkSearchHTML = () => {
   return `
     <div id="search__parks">
