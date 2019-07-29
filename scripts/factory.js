@@ -54,6 +54,8 @@ const createParkSearchHTML = () => {
 
 const createParkResults = () => {
   return `
-  <div id="results__parks"></div>
+  <div id="results__parks">
+    
+  </div>
   `
 }
