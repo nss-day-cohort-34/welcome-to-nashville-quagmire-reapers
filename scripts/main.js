@@ -25,6 +25,7 @@ const parkSearch = parksSearchButton.addEventListener("click", event => {
 // BEGIN RESTAURANTS SECTION
 //establishing a variable for the button string
 const searchButtonRestaurant = document.getElementById("restaurantSearchButton")
+const resultsContainer = document.getElementById("restaurantSearch")
 
 //main js query
 searchButtonRestaurant.addEventListener("click", () => getOpenTableData().then((restaurants) => {
