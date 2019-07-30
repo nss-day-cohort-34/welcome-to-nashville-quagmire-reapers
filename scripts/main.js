@@ -20,31 +20,6 @@ const parkSearch = parksSearchButton.addEventListener("click", event => {
   });
 });
 
-// getting save button to work
-    // // selects save button dynamically rendered
-    // const saveButton = document.querySelectorAll(`.saveParks`);
-    // // iterate through parks in results section
-    // saveButton.forEach(park => {
-    //   console.log(`${park.park_name}`)
-    // });
-
-// const parkSaveButton = document.querySelectorAll(".saveParks");
-// parkSaveButton.forEach(park => {
-//   park.addEventListener("click", () => {
-//     const parkItineraryHTML = parkObject => {
-//       return `
-//       <div class="itinerary__park">
-//         <h3>${parkObject.park_name}</h3>
-//         <h3>${parkObject.mapped_location.human_address}</h3>
-//       </div>
-//       `;
-//     };
-//     parkItineraryHTML();
-
-//     renderParkItinerary();
-//   });
-// });
-
 // END PARKS SECTION
 
 // BEGIN RESTAURANTS SECTION
