@@ -4,23 +4,32 @@ const parkResultsContainer = document.querySelector("#park-results");
 const parkItineraryContainer = document.querySelector("#park-itinerary");
 
 document.querySelector("#parkSearchButton").addEventListener("click", event => {
+  //allows multiple searches on same page without stacking results
   document.querySelector("#park-results").innerHTML = "";
+  //variable for userInput
   const userInput = document.querySelector("#parkSearch");
+  // passes userInput into first fetch function
   getParkData(userInput.value).then(parksArray => {
+    //for each item in the array do this
     parksArray.forEach(parkObj => {
-      const parkHTML = createParkItineraryHTML(parkObj);
+      //invoke createParkHTML function and pass the parkObj through it
+      const parkHTML = createParkHTML(parkObj);
+      //render data to the DOM at the location with this parkHTML string
       renderParkToDom(parkResultsContainer, parkHTML);
     });
   });
 });
 
 document.querySelector("#all-results").addEventListener("click", event => {
+  //only run the code "if" the class of the HTML element is "btn" (button)
   if (event.target.className.includes("btn")) {
-
+    // this was done reverse the replace space with comma from factory.js
     const parkID = event.target.id.split(",").join(" ");
+    //invokes the second fetch function using the parkID variable, then passes parkName through the function
     getParkName(parkID).then(parkName => {
-      console.log(parkName);
-      const savedPark = createParkHTML(parkName[0]);
+      //stores the create park itinerary string in a variable. only invokes function on first value of array (parks are returned as an array of objs)
+      const savedPark = createParkItineraryHTML(parkName[0]);
+      //invoke renderParkToDom and pass the itinerary container and savedPark string as the arguments.
       renderParkToDom(parkItineraryContainer, savedPark);
     });
   }

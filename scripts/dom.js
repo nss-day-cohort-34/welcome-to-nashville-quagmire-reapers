@@ -1,5 +1,5 @@
 // BEGIN PARKS SECTION
-
+//this function renders the data to the dom. the two parameters are a DOM reference (document.queryselector) and an HTML string
 const renderParkToDom = (location, string) => {
   location.innerHTML += string
 }
