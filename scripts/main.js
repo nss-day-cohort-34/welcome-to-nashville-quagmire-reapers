@@ -24,16 +24,21 @@ const parkSearch = parksSearchButton.addEventListener("click", event => {
 
 // BEGIN RESTAURANTS SECTION
 //establishing a variable for the button string
-const searchButtonRestaurant = document.getElementById("restaurantSearchButton")
-const resultsContainer = document.getElementById("restaurantSearch")
+const searchButtonRestaurant = document.querySelector("#restaurantSearchButton")
+const resultsContainer = document.querySelector("#restaurantSearch")
 
 //main js query
-searchButtonRestaurant.addEventListener("click", () => getOpenTableData().then((restaurants) => {
+searchButtonRestaurant.addEventListener("click", evt => {
+  const userInput = document.querySelector("#restaurantSearch").value
+  getOpenTableData(userInput)
+  .then((restaurants) => {
     restaurants.restaurants.forEach(restaurant => {
         const htmlString = createRestaurantDisplayComponent(restaurant)
         htmlRepresentation(htmlString)
+
     });
-}))
+  })
+})
 // END RESTAURANTS SECTION
 
 // BEGIN EVENTS SECTION
