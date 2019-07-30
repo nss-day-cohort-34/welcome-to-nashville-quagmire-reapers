@@ -1,8 +1,8 @@
 // BEGIN PARKS SECTION
-// let x = 0;
+let x = 1;
 const createParkHTML = parkObject => {
   return `
-  <div class="results__parks">
+  <div class="results__parks-${x++}">
     <h4>${parkObject.park_name}</h4>
     <p>${parkObject.mapped_location.human_address
       .replace('{"address": "', "")
@@ -21,8 +21,8 @@ const createParkHTML = parkObject => {
       .replace('", "zip": "37209"}', "")
       .replace('", "zip": "37076"}', "")
       .replace('", "zip": "37115"}', "")}</p>
-    <button class="saveParks">Save</button>
-  </div>
+      <button id="saveParks">Save</button>
+    </div>
   `;
 };
 
