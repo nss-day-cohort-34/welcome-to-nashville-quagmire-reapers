@@ -1,5 +1,4 @@
 // BEGIN PARKS SECTION
-let x = 1;
 const createParkHTML = parkObj => {
 
   const addressObj = JSON.parse(
@@ -7,10 +6,24 @@ const createParkHTML = parkObj => {
     );
 
   return `
-  <div class="results__parks-${x++}">
+  <div class="results__parks">
     <h4>${parkObj.park_name}</h4>
     <p>${addressObj.address}</p>
-      <button id="saveParks">Save</button>
+    </div>
+  `;
+};
+
+const createParkItineraryHTML = parkObj => {
+
+  const addressObj = JSON.parse(
+    parkObj.mapped_location.human_address
+    );
+const parkName = parkObj.park_name.split(" ").join(",")
+  return `
+  <div class="results__parks">
+    <h4>${parkObj.park_name}</h4>
+    <p>${addressObj.address}</p>
+      <button id=${parkName}>Save</button>
     </div>
   `;
 };
