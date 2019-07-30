@@ -8,6 +8,7 @@ createRestaurantDisplayComponent = (restaurant) => {
             <p>${restaurant.city}, ${restaurant.state}</p>
             <p>Reservation Phone: ${restaurant.phone}</p>
             <p>Website: ${restaurant.reserve_url}</p>
+            <button class=""saveRest>Save</button>
         </div>
     `
 }
