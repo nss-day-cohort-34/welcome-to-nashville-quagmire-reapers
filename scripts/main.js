@@ -30,12 +30,12 @@ const resultsContainer = document.querySelector("#restaurantSearch")
 //main js query
 searchButtonRestaurant.addEventListener("click", evt => {
   const userInput = document.querySelector("#restaurantSearch").value
+  document.querySelector("#restaurants-results").innerHTML = "";
   getOpenTableData(userInput)
   .then((restaurants) => {
     restaurants.restaurants.forEach(restaurant => {
         const htmlString = createRestaurantDisplayComponent(restaurant)
         htmlRepresentation(htmlString)
-
     });
   })
 })
