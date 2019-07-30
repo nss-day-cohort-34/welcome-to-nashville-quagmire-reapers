@@ -16,9 +16,9 @@ const getOpenTableData = userInput => {
   return fetch(`http://opentable.herokuapp.com/api/restaurants?city=Nashville&name=${userInput}`)
       .then(response => response.json())
 }
-const getRestaurantName=  () => {
-  return fetch(`http://opentable.herokuapp.com/api/restaurants?city=Nashville&name=${restaurantInput}`)
-      .then(response => response.json())
+// const getRestaurantName=  () => {
+//   return fetch(`http://opentable.herokuapp.com/api/restaurants?city=Nashville&name=${restaurantInput}`)
+//       .then(response => response.json())
 // END RESTAURANTS SECTION
 
 // BEGIN EVENTS SECTION
