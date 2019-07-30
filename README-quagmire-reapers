@@ -15,7 +15,9 @@ Information returned:
 - reservation phone number
 - restaurant URL
 
-Future enhancements will include:
-- the ability to make the itinerary persistent
-- the ability to view all of the iteneraries
-- adding a nav bar to move between different offerings
+Parks
+The parks section is a dropdown menu that will pull information on the API based on what you're looking for. 
+
+Ex: "Dog Parks" will pull the six dog parks in the Nashville Area and display their name and address.
+
+Future versions will allow the the user to save the park name and address to the itinerary.
