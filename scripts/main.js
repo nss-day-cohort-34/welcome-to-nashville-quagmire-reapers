@@ -1,7 +1,7 @@
 // BEGIN PARKS SECTION
 
 const parkResultsContainer = document.querySelector("#park-results");
-const parkItineraryContainer = document.querySelector("#park-itinerary")
+const parkItineraryContainer = document.querySelector("#park-itinerary");
 
 document.querySelector("#parkSearchButton").addEventListener("click", event => {
   document.querySelector("#park-results").innerHTML = "";
@@ -15,15 +15,18 @@ document.querySelector("#parkSearchButton").addEventListener("click", event => {
 });
 
 document.querySelector("#all-results").addEventListener("click", event => {
-  const parkID = event.target.id.split(",").join(" ");
-  getParkName(parkID).then(parkName => {
-    console.log(parkName)
-    const savedPark = createParkHTML(parkName[0]);
-    renderParkToDom(parkItineraryContainer, savedPark)
-  });
+  if (event.target.className.includes("btn")) {
+
+    const parkID = event.target.id.split(",").join(" ");
+    getParkName(parkID).then(parkName => {
+      console.log(parkName);
+      const savedPark = createParkHTML(parkName[0]);
+      renderParkToDom(parkItineraryContainer, savedPark);
+    });
+  }
 });
 
-// add conditional if it's a button only run code 
+// add conditional if it's a button only run code
 // clue event.target.className (put button in class name)
 
 // END PARKS SECTION

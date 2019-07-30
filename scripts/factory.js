@@ -23,7 +23,7 @@ const parkName = parkObj.park_name.split(" ").join(",")
   <div class="results__parks">
     <h4>${parkObj.park_name}</h4>
     <p>${addressObj.address}</p>
-      <button id=${parkName}>Save</button>
+      <button id=${parkName} class="btn">Save</button>
     </div>
   `;
 };
