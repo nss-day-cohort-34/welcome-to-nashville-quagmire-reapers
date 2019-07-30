@@ -1,3 +1,5 @@
+
+
 // BEGIN PARKS SECTION
 
 const getParkData = userSelection => {
@@ -9,7 +11,11 @@ const getParkData = userSelection => {
 // END PARKS SECTION
 
 // BEGIN RESTAURANTS SECTION
-
+//main fetch statement from opentable
+const getOpenTableData = () => {
+  return fetch('http://opentable.herokuapp.com/api/restaurants?city=Nashville&name=steak')
+      .then(response => response.json())
+}
 // END RESTAURANTS SECTION
 
 // BEGIN EVENTS SECTION

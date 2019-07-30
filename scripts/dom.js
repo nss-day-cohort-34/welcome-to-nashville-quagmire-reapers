@@ -1,3 +1,5 @@
+
+
 // BEGIN PARKS SECTION
 
 const containParkResults = document.querySelector("#park-results");
@@ -12,7 +14,15 @@ const renderParkItinerary = parkItineraryAsHTML => {
 // END PARKS SECTION
 
 // BEGIN RESTAURANTS SECTION
+const placeToLocateRestaurant = document.querySelector("#results-section")
 
+
+ const htmlRepresentation = (htmlString) =>  {
+     placeToLocateRestaurant.innerHTML += htmlString;
+     console.log(placeToLocateRestaurant)
+     console.log(htmlRepresentation)
+     
+ }
 // END RESTAURANTS SECTION
 
 // BEGIN EVENTS SECTION
