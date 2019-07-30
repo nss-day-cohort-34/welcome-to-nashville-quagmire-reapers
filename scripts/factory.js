@@ -3,8 +3,8 @@
 const createParkHTML = parkObject => {
   return `
   <div class="results__parks">
-    <h3>${parkObject.park_name}</h3>
-    <h3>${parkObject.mapped_location.human_address
+    <h4>${parkObject.park_name}</h4>
+    <p>${parkObject.mapped_location.human_address
       .replace('{"address": "', "")
       .replace('", "city": "', ", ")
       .replace('", "state": "', ", ")
@@ -20,7 +20,7 @@ const createParkHTML = parkObject => {
       .replace('", "zip": "37214"}', "")
       .replace('", "zip": "37209"}', "")
       .replace('", "zip": "37076"}', "")
-      .replace('", "zip": "37115"}', "")}</h3>
+      .replace('", "zip": "37115"}', "")}</p>
     <button class="saveParks">Save</button>
   </div>
   `;
