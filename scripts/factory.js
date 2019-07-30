@@ -1,5 +1,5 @@
 // BEGIN PARKS SECTION
-
+// let x = 0;
 const createParkHTML = parkObject => {
   return `
   <div class="results__parks">

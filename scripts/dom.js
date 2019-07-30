@@ -2,9 +2,13 @@
 
 const containParkResults = document.querySelector("#park-results");
 const renderParkResults = parkAsHTML => {
-  containParkResults.innerHTML += parkAsHTML
+  containParkResults.innerHTML += parkAsHTML;
 };
 
+const containParkItinerary = document.querySelectorAll(".itinerary__park");
+const renderParkItinerary = parkItineraryAsHTML => {
+  containParkItinerary.innerHTML += parkItineraryAsHTML;
+};
 // END PARKS SECTION
 
 // BEGIN RESTAURANTS SECTION
