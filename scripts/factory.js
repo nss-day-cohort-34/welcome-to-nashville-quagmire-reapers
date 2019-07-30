@@ -1,10 +1,8 @@
-console.log("hello from factory.js");
-
-let a = 1;
+// BEGIN PARKS SECTION
 
 const createParkHTML = parkObject => {
   return `
-  <div class="results__parks${a++}">
+  <div class="results__parks">
     <h3>${parkObject.park_name}</h3>
     <h3>${parkObject.mapped_location.human_address
       .replace('{"address": "', "")
@@ -22,8 +20,22 @@ const createParkHTML = parkObject => {
       .replace('", "zip": "37214"}', "")
       .replace('", "zip": "37209"}', "")
       .replace('", "zip": "37076"}', "")
-      .replace('", "zip": "37115"}', "")}
-    <button id="saveParks">Save</button>
+      .replace('", "zip": "37115"}', "")}</h3>
+    <button class="saveParks">Save</button>
   </div>
   `;
 };
+
+// END PARKS SECTION
+
+// BEGIN RESTAURANTS SECTION
+
+// END RESTAURANTS SECTION
+
+// BEGIN EVENTS SECTION
+
+// END EVENTS SECTION
+
+// BEGIN CONCERTS SECTION
+
+// END CONCERTS SECTION
