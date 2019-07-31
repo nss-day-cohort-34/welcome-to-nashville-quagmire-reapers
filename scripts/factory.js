@@ -1,4 +1,3 @@
-
 // BEGIN PARKS SECTION
 let x = 1;
 const createParkHTML = parkObject => {

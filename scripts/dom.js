@@ -1,6 +1,3 @@
-
-
-
 // BEGIN PARKS SECTION
 
 const containParkResults = document.querySelector("#park-results");

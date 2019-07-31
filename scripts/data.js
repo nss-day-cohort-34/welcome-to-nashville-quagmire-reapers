@@ -1,4 +1,3 @@
-
 // BEGIN PARKS SECTION
 
 const getParkData = userSelection => {

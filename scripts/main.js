@@ -1,4 +1,3 @@
-
 // BEGIN PARKS SECTION
 
 // Selects the Search Parks drop down menu by ID
