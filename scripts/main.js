@@ -1,10 +1,3 @@
-// renderSearchResults()
-// renderConcertsResults()
-// renderItineraryResults()
-
-// concertsHTMLResultsRep()
-// concertsHTMLSearchRep()
-
 
 // BEGIN PARKS SECTION
 
