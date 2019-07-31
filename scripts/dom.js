@@ -21,5 +21,20 @@ const htmlRepresentation = htmlString => {
 // END EVENTS SECTION
 
 // BEGIN CONCERTS SECTION
+// const renderConcertsSearchHTML = document.querySelector("#search-section")
 
+// const renderSearchResults = () => {
+//     renderConcertsSearchHTML.innerHTML += concertsHTMLSearchRep()
+// }
+
+const concertResultsSection = document.querySelector("#results-section")
+const renderConcertsResults = (concertAsHTML) => {
+    concertResultsSection.innerHTML += concertAsHTML
+}
+
+// const renderConcertsItineraryHTML = document.querySelector("#itinerary-section")
+
+// const renderItineraryResults = () => {
+//     renderConcertsItineraryHTML.innerHTML += concertsHTMLItineraryResults()
+// }
 // END CONCERTS SECTION

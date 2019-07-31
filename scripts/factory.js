@@ -55,4 +55,20 @@ createRestaurantDisplayComponent = restaurant => {
 
 // BEGIN CONCERTS SECTION
 
+
+const concertsHTMLResultsRep = (concertObj) => {
+    return  `
+    <div>
+       <h3>${concertObj.name}</h3>
+       <p>${concertObj.dates.start.localDate}</p>
+       <button>Save Concerts to Itenerary</button>
+    </div>
+    `
+}
+
+// const concertsHTMLItineraryResults = () => {
+//     return `
+//     <h3>Music City Itinerary</h3>
+//     `
+// }
 // END CONCERTS SECTION

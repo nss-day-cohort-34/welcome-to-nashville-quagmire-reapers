@@ -62,5 +62,22 @@ searchButtonRestaurant.addEventListener("click", () =>
 // END EVENTS SECTION
 
 // BEGIN CONCERTS SECTION
+const concertSearch = concertSearchButton.addEventListener("click", event => {
+  const userSelection = document.querySelector("#concertSearch").value
+  const concertResultsSection = document.querySelector("#concert-results");
+  getConcertData(userSelection).then(packageOfInfoFromFetch => {
+    // console.log("WHOLE PACKAGE", packageOfInfoFromFetch)
+
+    const allConcertsByUserGenre = packageOfInfoFromFetch._embedded.events
+    allConcertsByUserGenre.forEach(concert => {
+      console.log("one concert", concert)
+      const concertStringHTML = concertsHTMLResultsRep(concert)
+      console.log(concertStringHTML)
+      renderConcertsResults(concertStringHTML)
+    });
+  });
+});
+
+
 
 // END CONCERTS SECTION

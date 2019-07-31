@@ -32,5 +32,9 @@ const getOpenTableData = () => {
 // END EVENTS SECTION
 
 // BEGIN CONCERTS SECTION
-
+const getConcertData = (genre) => {
+  return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=AoIwW2jsbdQE4QLPUEqCsZWuic9ZCu1X&classificationName=${genre}&dmaId=343`)
+      .then(response => response.json())
+    
+}
 // END CONCERTS SECTION
