@@ -1,0 +1,23 @@
+## Quagmire-Reapers
+### Welcome To Nashville
+
+This is a Readme file for the Welcome to Nashville project
+
+Restaurants
+The restaurant section will provide information on restaurants that are listed in the Open Table database 
+in the Nashville market. It is based upon an open-source unofficial json API interface to search OpenTable restaurant data.
+Base funtionality in this section provides a user a search button. The click event will return a listing of the 25 restaurants 
+that are listed in the first page of returns from the api. 
+
+Information returned:
+- restaurant name
+- street address, city, state
+- reservation phone number
+- restaurant URL
+
+Parks
+The parks section is a dropdown menu that will pull information on the API based on what you're looking for. 
+
+Ex: "Dog Parks" will pull the six dog parks in the Nashville Area and display their name and address.
+
+Future versions will allow the the user to save the park name and address to the itinerary.
